@@ -20,12 +20,7 @@ fraude_colonne_df= pd.DataFrame(fraude_colonne, columns=['fraude'])
 print(fraude_colonne_df[:10])
 predict['fraude']=fraude_colonne_df
 
-
-
+# display first 10 rows
 print(predict[:10])
 
 predict.to_csv('result_neural.csv', sep=',', encoding='utf-8', header=False, index=False)
-
-#writer = csv.writer(open("result.csv", 'w'))
-#for row in predict.rows:
-#        writer.writerow(row)
