@@ -17,13 +17,13 @@ full_key_name_train = os.path.join(path, source_train)
 full_key_name_test = os.path.join(path, source_test)
 full_key_name_predict = os.path.join(path, source_predict)
 
-## AWS acces CSV
+## AWS access CSV
 access_key = 'AKIAI2F5E23QCQAOHEQQ'
 secret_key = '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'
 
-## Recupération depuis hadoop des fichiers en local
+## From Hadoop to localhost
 try:
-    # SSH => Récupère les fichiers depuis HDFS
+    # SSH => get files from HDFS
     client = paramiko.SSHClient()
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     client.connect(host_ip, port=port, username=user, password=pw)
@@ -31,7 +31,7 @@ try:
     stdin, stdout, stderr = client.exec_command('hadoop fs -get /tmp/maria_dev/predict.csv')
     stdin, stdout, stderr = client.exec_command('hadoop fs -get /tmp/maria_dev/test.csv')
 
-    # SCP => Import les fichiers en local
+    # SCP => import files in localhost
     scp = paramiko.Transport((host_ip, port))
     scp.connect(username=user, password=pw)
     sftp = paramiko.SFTPClient.from_transport(scp)
@@ -62,7 +62,7 @@ finally:
     print("done")
 
     
-## Supprime les fichiers existant en local
+## delete local files
 os.remove(dest_train)
 os.remove(dest_test)
 os.remove(dest_predict)
