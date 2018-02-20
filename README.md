@@ -42,7 +42,7 @@ in a remote Mongo database. There are two distinct collections: <em>frauds</em> 
 
 ## Details
 The overall reasoning (files reading, preprocessing, data vizualisation, algorithms & benchmarking,...)
-is exposed in this [file](https://github.com/HugoPopo/BigDataProject-Fraud_detection/blob/master/data-analysis/Big%20Data%20Project%20Etape%203.ipynb).
+is exposed in this [file](https://github.com/HugoPopo/BigDataProject-Fraud_detection/blob/master/Big%20Data%20Project%20Etape%203.ipynb).
 (You must run it with [Jupyter notebook](http://jupyter.readthedocs.io/en/latest/install.html)).
 
 ## See also
