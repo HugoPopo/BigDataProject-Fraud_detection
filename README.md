@@ -47,3 +47,9 @@ is exposed in this [file](https://github.com/HugoPopo/BigDataProject-Fraud_detec
 
 ## See also
 [Lespes, Robin, et al. “Ces algorithmes chasseurs de fraudeurs.” <em>Quantmetry | Data Consulting | Big Data | Data Science</em>, Quantmetry, 11 May 2017.](https://www.quantmetry.com/single-post/2017/05/11/Ces-algorithmes-chasseurs-de-fraudeurs)
+<br>
+[Over-sampling](http://contrib.scikit-learn.org/imbalanced-learn/stable/over_sampling.html)
+<br>
+[Visualisation](https://www.kaggle.com/rameshkumarak/predict-bike-sharing-demand-using-boosting-pca)
+<br>
+[Model building](https://www.kaggle.com/viveksrinivasan/eda-ensemble-model-top-10-percentile)
